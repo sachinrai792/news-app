@@ -30,7 +30,7 @@ function FetchNews() {
         <div className="row">
           {news.map((value) => {
             return (
-              <div className="col-4">
+              <div className="col-4" key = {index}>
                 <div className="card" style={{ width: "18rem" }}>
                   <img src={value.urlToImage} className="card-img-top" alt="..." />
                   <div className="card-body">
